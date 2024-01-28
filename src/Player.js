@@ -1,18 +1,18 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 
-function Player({attribut}) {
+function Player({info}) {
   return (
-    <div id="carte">
+    <div>
       <Card style={{ width: '20rem' }}>
-      <Card.Img variant="top" src={attribut.img}/>
+      <Card.Img variant="top" src={info.img}/>
       <Card.Body >
-        <Card.Title>Name:{attribut.name}</Card.Title>
+        <Card.Title>Name:{info.name}</Card.Title>
         <Card.Text>
-        Age:{attribut.age}ans<br/>
-        Nationality:{attribut.nationality}<br/>
-        Team:{attribut.team}<br/>
-        Jersey Number:{attribut.jerseyNumber}
+        Age:{info.age}ans<br/>
+        Nationality:{info.nationality}<br/>
+        Team:{info.team}<br/>
+        Jersey Number:{info.jerseyNumber}
         </Card.Text>
         
       </Card.Body>
